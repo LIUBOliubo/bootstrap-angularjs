@@ -1,0 +1,31 @@
+var angularStore=angular.module('AngularStore',['ngRoute','app-store','app-server']);
+angularStore.config(['$routeProvider',function($routeProvider){
+  $routeProvider
+  .when('/item1',{
+    templateUrl:'/partials/item1.html',
+    controller:"item1Controller"
+  })
+  .when('/item2',{
+    templateUrl:'/partials/item2.html',
+    controller:"item2Controller"
+  })
+  .when('/item3',{
+    templateUrl:'/partials/item3.html',
+    controller:"item3Controller"
+  })
+  .when('/ding1',{
+    templateUrl:'/partials/ding1.html',
+    controller:"ding1Controller"
+  })
+  .when('/ding2',{
+    templateUrl:'/partials/ding2.html',
+    controller:"ding2Controller"
+  })
+  .when('/ding3',{
+    templateUrl:'/partials/ding3.html',
+    controller:"ding3Controller"
+  })
+  .otherwise({
+    redirectTo:'/item1'
+  });
+}])

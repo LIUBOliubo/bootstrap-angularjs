@@ -1,0 +1,104 @@
+.ding1_1{
+width: 100%;
+margin-bottom: 10px;
+height: 30px;
+}
+.ding1_1box{
+  width: 100%;
+  height: 100px;
+}
+
+.ding1_1_1{
+padding: 2px;
+height:30px;
+width: 100%;
+
+}
+.ding1_1_1 input{
+width: 40%;
+border: none;
+box-shadow: 0 0 4px 2px  pink;
+border-radius: 5px ;
+}
+.ding1_1_1 button{
+border: none;
+background: #eee;
+border-radius: 5px ;
+box-shadow: 0 0 2px 2px lightblue;
+}
+.ding1_1_1 button:active{
+color: blue;
+box-shadow: 0 0 2px 2px  #fff;
+}
+
+.ding1box{
+overflow: hidden;
+padding: 10px ;
+width: 100%;
+height: 650px;
+
+ margin: 0 auto;
+}
+.ding1box .ulheader{
+margin:0 auto;
+width: 100%;
+height: 40px;
+line-height: 40px;
+text-align: center;
+background: #b4a7d6;
+box-sizing: border-box;
+}
+.ding1box .row div{
+box-sizing: border-box;
+border-right: 1px solid lightblue;
+font-weight: 600;
+}
+.ding1box .row{
+box-sizing: border-box;
+}
+.ding1box .ullist:nth-child(odd){
+margin: 0 auto;
+width: 100%;
+background: lightyellow;
+box-sizing: border-box;
+text-align: center;
+height: 36px;
+line-height:36px;
+overflow: hidden;
+border: 1px solid lightblue;
+}
+.ding1box .ullist:nth-child(even){
+margin: 0 auto;
+width: 100%;
+border: 1px solid lightblue;
+background:lightyellow;
+box-sizing: border-box;
+text-align: center;
+
+height: 36px;
+line-height: 36px;
+overflow: hidden;
+}
+.ding1box .ullist div{
+overflow: hidden;
+font-weight: 100;
+}
+.ding1_1_1 b{
+display: inline-block;
+padding: 4px 5px;
+}
+
+.ding1_fa{
+margin: 4px auto;
+border: none;
+background: #eee;
+width: 80%;
+height: 24px;
+text-align: center;
+line-height: 24px;
+display: block;
+border-radius: 4px;
+}
+.ding1_fa:active{
+  box-shadow: 0 0 3px 3px lightgreen;
+}

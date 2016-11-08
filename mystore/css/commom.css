@@ -1,0 +1,42 @@
+ li{
+ list-style: none;
+ }
+ body{
+ background: lightyellow;
+ }
+/*---left----*/
+.leftbt1{
+width: 100%;
+min-width: 100px;
+padding: 0;
+}
+.panel-body{
+padding: 0;
+}
+.leftbox1 ul,li{
+width: 100%;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.panel-heading{
+padding: 0;
+}
+.leftbox{
+border: 1px solid #fff;
+padding: 10px 10px;
+border-radius: 10px;
+background-color: #eee;
+}
+.childTab li{
+width: 80%;
+background-color: lightblue;
+height: 25px;
+line-height: 25px;
+border-radius: 5px;
+margin: 5px;
+overflow: hidden;
+}
+.row .leftbox{
+padding: 0;
+}

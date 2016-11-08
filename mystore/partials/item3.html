@@ -1,0 +1,45 @@
+<div class="item1box" >
+  <div class='item1_1box'>
+      <h4><span>》》</span>删除商品</h4>
+      <div class="item1_1_1">
+        <div class='row'>
+          <div class="col-xs-10">
+            <input type="text" ng-model="value1" placeholder="请输入关键字......"> <button ng-click="searbt(value1)" >搜索</button>
+          </div>
+          <div class="col-xs-2">
+              <button id='itemSa' ng-click="item()" >显示全部</button>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+<div class="item3box">
+  <div class="item1_1_2">
+    <div class="row ulheader">
+      <div class="col-xs-1">序号</div>
+      <div class="col-xs-2" ng-click="code='(code==id) ? code=-id : code=id;'">商品ID</div>
+      <div class="col-xs-2">商品名称</div>
+      <div class="col-xs-2" ng-click="code='(code == price) ? code=-price : code=price;'">单价</div>
+      <div class="col-xs-1" ng-click="code='(code == redidue) ? code=-redidue : code=redidue;'">库存</div>
+      <div class="col-xs-1" ng-click="code='(code == sell) ? code=-sell : code=sell;'">已售</div>
+      <div class="col-xs-3" >操作</div>
+    </div>
+    <div class="row ullist" ng-repeat="item in item3  | filter:search1 |orderBy:code">
+      <div class="col-xs-1">{{$index}}</div>
+      <div class="col-xs-2">{{item.id}}</div>
+      <div class="col-xs-2">{{item.name}}</div>
+      <div class="col-xs-2" ng-click="pri(price)">{{item.price | currency:"￥"}}/个</div>
+      <div class="col-xs-1">{{item.redidue}}</div>
+      <div class="col-xs-1">{{item.sell}}</div>
+
+        <div class="col-xs-3">
+          <button type="button" ng-click="delete(item.id)">删除</button>
+          <button type="button"><a href="#/item2">修改</a></button>
+          <button type="button"><a href="#/item2">添加</a></button>
+        </div>
+
+    </div>
+  </div>
+</div>
+</div>

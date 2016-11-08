@@ -1,0 +1,118 @@
+{
+  "ret": 0,
+  "errmsg": "error",
+  "errcode": 500,
+  "data": [{
+    "id":"001",
+		"name":"苹果",
+    "words":"烟台冰糖心  个大好吃",
+    "price":3,
+    "redidue":120,
+    "sell":450
+	}, {
+    "id":"002",
+    "name":"芒果",
+    "words":"海南贵妃芒果  香甜味浓",
+    "price":5,
+    "redidue":120,
+    "sell":180
+	}, {
+    "id":"003",
+    "name":"荔枝",
+    "words":"热带荔枝 荔枝中的贵族",
+    "price":3,
+    "redidue":190,
+    "sell":230
+	}, {
+    "id":"004",
+    "name":"香蕉",
+    "words":"广西香蕉林  原生态水果",
+    "price":2,
+    "redidue":170,
+    "sell":530
+	}, {
+    "id":"005",
+    "name":"进口橘子",
+    "words":"马来西亚进口  橘味十足",
+    "price":1,
+    "redidue":140,
+    "sell":300
+	}, {
+    "id":"006",
+    "name":"哈密瓜",
+    "words":"新疆哈密瓜 香甜可口",
+    "price":8,
+    "redidue":100,
+    "sell":400
+	}, {
+    "id":"007",
+    "name":"葡萄",
+    "words":"吐鲁番特供  含糖量高",
+    "price":5,
+    "redidue":350,
+    "sell":230
+	}, {
+    "id":"008",
+    "name":"冰糖雪梨",
+    "words":"河北酥梨  不一样的味道",
+    "price":2,
+    "redidue":400,
+    "sell":250
+	},{
+    "id":"009",
+		"name":"进口苹果",
+    "words":"日本冰糖心  个大好吃",
+    "price":4.88,
+    "redidue":380,
+    "sell":330
+	}, {
+    "id":"010",
+    "name":"进口芒果",
+    "words":"泰国贵妃芒果  香甜味浓",
+    "price":4,
+    "redidue":330,
+    "sell":340
+	}, {
+    "id":"011",
+    "name":"进口荔枝",
+    "words":"马来西亚直供 荔枝中的贵族",
+    "price":3,
+    "redidue":320,
+    "sell":130
+	}, {
+    "id":"012",
+    "name":"进口香蕉",
+    "words":"广西香蕉林  原生态水果",
+    "price":3,
+    "redidue":210,
+    "sell":310
+	}, {
+    "id":"013",
+    "name":"进口橘子",
+    "words":"马来西亚进口  橘味十足",
+    "price":2,
+    "redidue":440,
+    "sell":220
+	}, {
+    "id":"014",
+    "name":"进口哈密瓜",
+    "words":"菲律宾哈密瓜 香甜可口",
+    "price":7,
+    "redidue":200,
+    "sell":320
+	}, {
+    "id":"015",
+    "name":"进口葡萄",
+    "words":"吐鲁番特供  含糖量高",
+    "price":6,
+    "redidue":310,
+    "sell":119
+	}, {
+    "id":"016",
+    "name":"进口酥梨",
+    "words":"进口酥梨  不一样的味道",
+    "price":3,
+    "redidue":322,
+    "sell":220
+	}]
+}

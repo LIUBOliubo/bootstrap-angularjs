@@ -1,0 +1,42 @@
+<div class="item1box" >
+  <div class='ding1_1box'>
+      <h4><span>》》</span>订单列表</h4>
+      <div class="ding1_1_1">
+        <div class='row'>
+          <div class="col-xs-10">
+            <div class="ding1_1">
+                <input type="text" ng-model="value1" placeholder="请输入订单编号......"> <button ng-click="searbt(value1)" >搜索订单编号</button>
+            </div>
+            <div class="ding1_1">
+                <input type="text" ng-model="value1" placeholder="请输入买家账号......"> <button ng-click="searbt(value1)" >搜索买家订单</button>
+            </div>
+
+          </div>
+          <div class="col-xs-2">
+              <button id='itemSa' ng-click="item()" >显示全部</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="ding1box">
+    <div class="row ulheader">
+      <div class="col-xs-1">序号</div>
+      <div class="col-xs-2" ng-click="code='(code==d_num) ? code=-d_num : code=d_num;'">订单编号</div>
+      <div class="col-xs-2">收货人</div>
+      <div class="col-xs-2">商品名称</div>
+      <div class="col-xs-1" ng-click="code='(code == sum) ? code=-sum : code=sum;'">金额</div>
+      <div class="col-xs-2" ng-click="code='(code == user_data) ? code=-user_data : code=user_data;'">日期</div>
+      <div class="col-xs-2" ng-click="code='(code == user_get) ? code=-user_get : code=user_get;'">是否发货</div>
+    </div>
+    <div class="row ullist" ng-repeat="item in ding1  | filter:search1 ||search2 |orderBy:code">
+      <div class="col-xs-1">{{$index}}</div>
+      <div class="col-xs-2">{{item.d_num}}</div>
+      <div class="col-xs-2">{{item.user_name}}</div>
+      <div class="col-xs-2">{{item.name}}</div>
+      <div class="col-xs-1">{{item.sum | currency:"￥"}}</div>
+      <div class="col-xs-2">{{item.user_data}}</div>
+      <div class="col-xs-2"><button ng-click="fa(item)" class="ding1_fa" >{{(item.user_get)?"已发货":"未发货"}}</button></div>
+    </div>
+  </div>
+
+</div>

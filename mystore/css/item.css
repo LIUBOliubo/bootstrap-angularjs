@@ -1,0 +1,194 @@
+/*---item1---*/
+.item1box{
+padding: 10px;
+margin: -5px;
+ width: 100%;
+ height: 750px;
+ background: #b1f4e8;
+ border-radius: 20px;
+}
+.item1_1box span{
+font-weight: 600;
+color: blue;
+}
+ .item1_1_1{
+ padding: 2px;
+ height:30px;
+ width: 100%;
+
+ }
+ .item1_1_1 input{
+ width: 40%;
+ border: none;
+ box-shadow: 0 0 4px 2px  pink;
+ border-radius: 5px ;
+ }
+ .item1_1_1 button{
+ border: none;
+ background: #eee;
+ border-radius: 5px ;
+ box-shadow: 0 0 2px 2px lightblue;
+ }
+ .item1_1_1 button:active{
+ color: blue;
+ box-shadow: 0 0 2px 2px  #fff;
+ }
+ .item1_1_2 {
+ padding: 10px ;
+ width: 100%;
+ height: 650px;
+
+ }
+ /*--列表头--*/
+ .item1_1_2 .ulheader{
+ width: 100%;
+ height: 30px;
+ line-height: 30px;
+ text-align: center;
+ background: #b4a7d6;
+box-sizing: border-box;
+ }
+.item1_1_2 .row div{
+box-sizing: border-box;
+border-right: 1px solid lightgreen;
+font-weight: 600;
+ }
+ .item1_1_2 .row{
+ box-sizing: border-box;
+ }
+ .item1_1_2 .ullist:nth-child(odd){
+ width: 100%;
+ background: lightpink;
+ box-sizing: border-box;
+ text-align: center;
+ margin-top: 1px;
+ height: 26px;
+ line-height: 26px;
+ overflow: hidden;
+ }
+ .item1_1_2 .ullist:nth-child(even){
+ width: 100%;
+ background:#a3f9a6;
+ box-sizing: border-box;
+ text-align: center;
+ margin-top: 2px;
+ height: 26px;
+ line-height: 26px;
+ overflow: hidden;
+ }
+ .item1_1_2 .ullist div{
+ overflow: hidden;
+ font-weight: 100;
+ }
+ .item1_1_1 b{
+ display: inline-block;
+ padding: 4px 5
+ }
+
+/*----item2-----*/
+.item2box{
+width: 100%;
+height:650px;
+padding: 10px 20px;
+
+}
+ .item2box .item2_1{
+    height: 650px;
+
+ }
+ .item2box .item2_1 table{
+  width: 100%;
+ }
+.item2_1 .item2_1_h1{
+background: lightgreen;
+height: 30px;
+text-align: center;
+overflow: hidden;
+}
+.item2_1_h1 td{
+border: 1px solid lightblue;
+overflow: hidden;
+}
+.item2_1_h2{
+background: lightpink;
+height: 24px;
+text-align: center;
+overflow: hidden;
+}
+.item2_1_h2 td{
+border: 1px solid #fff;
+overflow: hidden;
+}
+.item2box .item2_2{
+height: 400px;
+background: lightyellow;
+border-radius: 10px;
+}
+.item2_2 ul{
+padding: 30px 10px;
+width: 100%;
+height: 300px;
+}
+.item2_2 li{
+
+width: 100%;
+height: 40px;
+overflow: hidden;
+
+}
+.item2_2 li span{
+display: block;
+float: left;
+width: 30%;
+
+line-height: 40px;
+font-weight: 600;
+color: purple;
+}
+.item2_2 li input{
+box-sizing:border-box;
+border: none;
+margin: 6px 0;
+width: 70%;
+height: 28px;
+box-shadow: 0 0 2px 2px #fff;
+background: lightblue;
+border-radius: 4px;
+}
+.item2_2_2{
+box-sizing: border-box;
+width:100%;
+display: block;
+height: 40px;
+
+}
+.item2_2_2 button{
+box-sizing: border-box;
+width:40%;
+background: #b1f4e8;
+border: none;
+border-radius: 5px;
+color:#444;
+font-weight: 600;
+}
+.item2_bt2{
+float: right;
+}
+.item2_2_2 button:active{
+color: #fff;
+box-shadow: 0 0 4px 4px #eee;
+}
+
+
+/*------item3----*/
+.col-xs-3 button{
+box-sizing: border-box;
+border: none;
+background: lightblue;
+width: 30%;
+ display: inline-block;
+ height: 22px;
+ line-height: 22px;
+ border-radius: 4px;
+
+}

@@ -1,0 +1,57 @@
+
+<div class="item1box" >
+  <div class='item1_1box'>
+      <h4><span>》》</span>添加商品信息</h4>
+      <div class="item1_1_1">
+        <div class='row'>
+          <div class="col-xs-10">
+            <input type="text" ng-model="value1" placeholder="请输入关键字......"> <button ng-click="searbt(value1)" >搜索</button>
+          </div>
+          <div class="col-xs-2">
+              <button id='itemSa' ng-click="item()" >显示全部</button>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+  <div class="item2box">
+  <div class="row">
+    <div class="col-xs-6 item2_1 ">
+      <table id='item2table'>
+        <tr class="item2_1_h1">
+          <td>序号</td>
+          <td>商品ID</td>
+          <td>商品名称</td>
+          <td>商品单价</td>
+        </tr >
+        <tr ng-repeat="item in product |filter:search1 " class="item2_1_h2"  >
+          <td>{{$index}}</td>
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.price |currency:"￥"}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-xs-6 item2_2">
+      <ul>
+        <li><span>商品ID:</span><input type="text" ng-model="id" id='item2_id'></li>
+
+        <li><span>商品名称:</span><input type="text" ng-model="name" id='item2_name'></li>
+        <li><span>商品描述:</span><input type="text" ng-model="words" id='item2_words'></li>
+        <li><span>商品单价:</span><input type="text" ng-model="price" id='item2_price'></li>
+        <li><span>商品库存:</span><input type="text" ng-model="redidue" id='item2_redidue'></li>
+        <li id="tip"></li>
+      </ul>
+      <div class="item2_2_2">
+        <button class="item2_bt1" type="button" id="item2_bt1">修 改</button>
+        <button class="item2_bt2" type="button" id="item2_bt2">添 加</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+
+</script>

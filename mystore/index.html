@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="AngularStore">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/index.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/commom.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/item.css">
+  <link rel="stylesheet" href="/css/ding.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="page-header">
+        <a href="#">后台管理系统</a>
+      </h1>
+    </div>
+    <div class="row">
+      <div class="col-xs-2 leftbox">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                   <button type="button" class="btn btn-primary btn-lg leftbt1" style="text-shadow: black 5px 3px 3px;">
+                       <span class="glyphicon glyphicon-th"></span> 商品管理
+                   </button>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in leftbox1">
+              <div class="panel-body">
+                <ul class="childTab">
+                  <li class="	glyphicon glyphicon-star Tabchild"><a href="#/item1"><span>查看商品列表</span></a></li>
+                  <li class="	glyphicon glyphicon-star-empty Tabchild"><a href="#/item2"><span>修改/添加信息</span></a></li>
+                  <!-- <li class="	glyphicon glyphicon-star Tabchild"><span >修改商品信息</span></li> -->
+                  <li class="	glyphicon glyphicon-star-empty Tabchild"><a href="#/item3"><span>删除商品信息</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseTwo">
+                   <button type="button" class="btn btn-primary btn-lg leftbt1" style="text-shadow: black 5px 3px 3px;">
+                     <span class="glyphicon glyphicon-list-alt"></span> 订单管理
+                   </button>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse leftbox1">
+              <div class="panel-body">
+                <ul class="childTab">
+                  <li class="	glyphicon glyphicon-star Tabchild" ><span><a href="#/ding1">查看订单列表</a></span></li>
+                  <li class="	glyphicon glyphicon-star-empty Tabchild"><span><a href="#/ding2">已发货订单</a></span></li>
+                  <li class="	glyphicon glyphicon-star Tabchild"><span ><a href="#/ding3">未发货订单</a></span></li>
+                  <li class="	glyphicon glyphicon-star-empty Tabchild"><span>已处理订单</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseThree">
+                   <button type="button" class="btn btn-primary btn-lg leftbt1" style="text-shadow: black 5px 3px 3px;">
+                     <span class="glyphicon glyphicon-inbox"></span> 仓库管理
+                   </button>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse leftbox1">
+              <div class="panel-body">
+                <ul class="childTab">
+                  <li class="	glyphicon glyphicon-star Tabchild" ><span>仓库信息</span></li>
+                  <li class="	glyphicon glyphicon-star-empty Tabchild"><span>仓库商品详情</span></li>
+                  <li class="	glyphicon glyphicon-star Tabchild"><span >我要补仓</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion"
+                 href="#collapseFour">
+                 <button type="button" class="btn btn-primary btn-lg leftbt1" style="text-shadow: black 5px 3px 3px;">
+                   <span class="glyphicon glyphicon-retweet"></span> 货架管理
+                 </button>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse leftbox1">
+            <div class="panel-body">
+              <ul class="childTab">
+                <li class="	glyphicon glyphicon-star Tabchild" ><span>我的货架</span></li>
+                <li class="	glyphicon glyphicon-star-empty Tabchild"><span>商品下架</span></li>
+                <li class="	glyphicon glyphicon-star Tabchild"><span >商品上架</span></li>
+                <li class="	glyphicon glyphicon-star-empty Tabchild"><span>货架管理信息</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-10 rightbox">
+            <ng-view></ng-view>
+      </div>
+    </div>
+  </div>
+
+    <script src="/js/libs/jquery.min.js"></script>
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="/js/libs/angular.min.js"></script>
+    <script src="/js/libs/angular-route.min.js"></script>
+
+
+    <script src='/js/server.js'></script>
+    <script src='/js/store.js'></script>
+
+     <script src='/js/views/ding1.js'></script>
+     <script src='/js/views/item1.js'></script>
+     <script src='/js/views/item2.js'></script>
+     <script src='/js/views/item3.js'></script>
+
+
+
+    <script src="/js/app.js"></script>
+    <script src="/js/dom.js"></script>
+
+
+    </script>
+</body>
+</html>
