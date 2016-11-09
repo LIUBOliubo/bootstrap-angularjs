@@ -5,10 +5,10 @@
         <div class='row'>
           <div class="col-xs-10">
             <div class="ding1_1">
-                <input type="text" ng-model="value1" placeholder="请输入订单编号......"> <button ng-click="searbt(value1)" >搜索订单编号</button>
+                <input type="text" ng-model="value1" placeholder="请输入订单编号......"> <button ng-click="searbt1(value1)" id="searbt1">搜索订单编号</button>
             </div>
             <div class="ding1_1">
-                <input type="text" ng-model="value1" placeholder="请输入买家账号......"> <button ng-click="searbt(value1)" >搜索买家订单</button>
+                <input type="text" ng-model="value2" placeholder="请输入买家账号......"> <button id="searbt2" ng-click="searbt2(value2)" >搜索买家订单</button>
             </div>
 
           </div>
@@ -28,7 +28,7 @@
       <div class="col-xs-2" ng-click="code='(code == user_data) ? code=-user_data : code=user_data;'">日期</div>
       <div class="col-xs-2" ng-click="code='(code == user_get) ? code=-user_get : code=user_get;'">是否发货</div>
     </div>
-    <div class="row ullist" ng-repeat="item in ding1  | filter:search1 ||search2 |orderBy:code">
+    <div class="row ullist" ng-repeat="item in ding1  | filter:search1 |filter:search2 |orderBy:code">
       <div class="col-xs-1">{{$index}}</div>
       <div class="col-xs-2">{{item.d_num}}</div>
       <div class="col-xs-2">{{item.user_name}}</div>

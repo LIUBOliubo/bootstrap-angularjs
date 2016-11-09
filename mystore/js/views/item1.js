@@ -1,7 +1,7 @@
 appStore.controller('item1Controller',['$scope','$rootScope','$routeParams','$http',function($scope,$rootScope,$routeParams,$http){
    $http({
      //url:'/mock/list1.json'
-     url:'http://localhost:3100/goodAll'
+     url:'http://www.ubugyun.com:3100/goodAll'
    })
    .then(function(res){
      console.log(res.data);

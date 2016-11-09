@@ -13,11 +13,11 @@ $('#itemSa').attr('disabled',false);
    $scope.delete=function(id){
      console.log(id);
      $http({
-       url:"http://localhost:3100/goodDel?id="+id
+       url:"http://www.ubugyun.com:3100/goodDel?id="+id
      })
      .then(function(res){
        $.ajax({
-         url:"http://localhost:3100/goodAll",
+         url:"http://www.ubugyun.com:3100/goodAll",
          success:function(res){
            $scope.item3=res;
            $rootScope.store=res;
@@ -34,7 +34,7 @@ $('#itemSa').attr('disabled',false);
    }
   //  function delete(id){
   //    $.ajax({
-  //   url:"http://localhost:3100/goodAdd?id="+id,
+  //   url:"http://www.ubugyun.com:3100/goodAdd?id="+id,
   //   success:function(res){
   //   alert('删除成功！！')
   //

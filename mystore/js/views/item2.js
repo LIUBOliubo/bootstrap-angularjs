@@ -15,7 +15,7 @@ appStore.controller("item2Controller",['$scope','$rootScope','$routeParams',func
     var x=this.value*1;
     //console.log(x);
     $.ajax({
-      url: "http://localhost:3100/goodById?id="+x,
+      url: "http://www.ubugyun.com:3100/goodById?id="+x,
 
       success: function(res){
           console.log(res);
@@ -53,7 +53,7 @@ appStore.controller("item2Controller",['$scope','$rootScope','$routeParams',func
       var words=$('#item2_words').val();
       var redidue=$('#item2_redidue').val();
       $.ajax({
-     url:"http://localhost:3100/goodAdd?id="+id+"&name="+name+"&words="+words+"&price="+price+"&redidue="+redidue,
+     url:"http://www.ubugyun.com:3100/goodAdd?id="+id+"&name="+name+"&words="+words+"&price="+price+"&redidue="+redidue,
      success:function(res){
        //console.log(res);
        $('#tip').html("温馨提示：商品添加成功！！");
@@ -77,7 +77,7 @@ appStore.controller("item2Controller",['$scope','$rootScope','$routeParams',func
     var words=$('#item2_words').val();
     var redidue=$('#item2_redidue').val();
     $.ajax({
-   url:"http://localhost:3100/goodUpdate?name="+name+"&words="+words+"&price="+price+"&redidue="+redidue+"&id="+id,
+   url:"http://www.ubugyun.com:3100/goodUpdate?name="+name+"&words="+words+"&price="+price+"&redidue="+redidue+"&id="+id,
    success:function(res){
      console.log(res);
      console.log(111111);
@@ -96,7 +96,7 @@ $('.item2_2 input').css({'box-shadow':"0 0 2px 2px lightgreen"});
   })
   function shua(){
     $.ajax({
-      url:'http://localhost:3100/goodAll',
+      url:'http://www.ubugyun.com:3100/goodAll',
       success:function(res){
         console.log(1111111111111111111);
         console.log($rootScope.store);

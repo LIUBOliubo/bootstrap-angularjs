@@ -9,8 +9,8 @@
 6 silly lifecycle projectName@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle projectName@0.0.0~start: projectName@0.0.0
 8 verbose lifecycle projectName@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle projectName@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Administrator\Desktop\express\express\node_modules\.bin;C:\Users\Administrator\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\Administrator\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\wamp64\bin\mysql\mysql5.7.9\bin;D:\wamp64\bin\mysql\mysql5.7.9\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl
-10 verbose lifecycle projectName@0.0.0~start: CWD: C:\Users\Administrator\Desktop\express\express
+9 verbose lifecycle projectName@0.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Administrator\Desktop\上传\express\node_modules\.bin;C:\Users\Administrator\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\local\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\usr\bin;C:\Program Files (x86)\Git\mingw32\bin;C:\Program Files (x86)\Git\usr\bin;C:\Users\Administrator\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;D:\wamp64\bin\mysql\mysql5.7.9\bin;D:\wamp64\bin\mysql\mysql5.7.9\bin;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files (x86)\Git\usr\bin\vendor_perl;C:\Program Files (x86)\Git\usr\bin\core_perl
+10 verbose lifecycle projectName@0.0.0~start: CWD: C:\Users\Administrator\Desktop\上传\express
 11 silly lifecycle projectName@0.0.0~start: Args: [ '/d /s /c', 'node ./bin/www' ]
 12 silly lifecycle projectName@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle projectName@0.0.0~start: Failed to exec start script
@@ -25,7 +25,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:819:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:212:5)
 15 verbose pkgid projectName@0.0.0
-16 verbose cwd C:\Users\Administrator\Desktop\express\express
+16 verbose cwd C:\Users\Administrator\Desktop\上传\express
 17 error Windows_NT 6.1.7601
 18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
 19 error node v5.2.0
